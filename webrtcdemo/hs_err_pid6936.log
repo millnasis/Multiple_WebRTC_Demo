@@ -1,0 +1,195 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (mmap) failed to map 268435456 bytes for Failed to commit area from 0x0000000701400000 to 0x0000000711400000 of length 268435456.
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (./src/hotspot/os/windows/os_windows.cpp:3301), pid=6936, tid=8944
+#
+# JRE version:  (11.0.10+9) (build )
+# Java VM: OpenJDK 64-Bit Server VM (11.0.10+9, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dmaven.multiModuleProjectDirectory=d:\javaWorkSpace\Multiple_WebRTC_Demo\webrtcdemo org.apache.maven.wrapper.MavenWrapperMain -B -N -DgraphFormat=text -DshowDuplicates -DshowConflicts -DshowVersions -DshowGroupIds -DoutputDirectory=c:\Users\Administrator\AppData\Roaming\Code\User\workspaceStorage\4b0c9829e5be415d1a53d71576b5d93b\vscjava.vscode-maven -DoutputFileName=10725ad476dd24da223726cd00963e24.deps.txt com.github.ferstl:depgraph-maven-plugin:4.0.2:graph -f d:\javaWorkSpace\Multiple_WebRTC_Demo\webrtcdemo\pom.xml
+
+Host: AMD Ryzen 5 2600 Six-Core Processor            , 12 cores, 15G,  Windows 10 , 64 bit Build 19041 (10.0.19041.3155)
+Time: Sun Aug 27 01:18:04 2023 东京标准时间 elapsed time: 0.018332 seconds (0d 0h 0m 0s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000000002b12000):  JavaThread "Unknown thread" [_thread_in_vm, id=8944, stack(0x00000000021f0000,0x00000000022f0000)]
+
+Stack: [0x00000000021f0000,0x00000000022f0000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x5f35ea]
+V  [jvm.dll+0x77c65e]
+V  [jvm.dll+0x77dd2f]
+V  [jvm.dll+0x77e3f3]
+V  [jvm.dll+0x246c38]
+V  [jvm.dll+0x5f079a]
+V  [jvm.dll+0x5e53c5]
+V  [jvm.dll+0x2fba4c]
+V  [jvm.dll+0x2fb8d2]
+V  [jvm.dll+0x300586]
+V  [jvm.dll+0x344cff]
+V  [jvm.dll+0x344730]
+V  [jvm.dll+0x2d8cb8]
+V  [jvm.dll+0x2d9e06]
+V  [jvm.dll+0x757c77]
+V  [jvm.dll+0x7593ff]
+V  [jvm.dll+0x351a59]
+V  [jvm.dll+0x73aea0]
+V  [jvm.dll+0x3b929f]
+V  [jvm.dll+0x3bb7a1]
+C  [jli.dll+0x520b]
+C  [ucrtbase.dll+0x21bb2]
+C  [KERNEL32.DLL+0x17614]
+C  [ntdll.dll+0x526b1]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x0000000000558820, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+  0x0000000002b28800 GCTaskThread "GC Thread#0" [stack: 0x00000000024d0000,0x00000000025d0000] [id=7764]
+  0x0000000002b87000 ConcurrentGCThread "G1 Main Marker" [stack: 0x00000000240d0000,0x00000000241d0000] [id=18448]
+  0x0000000002b8d000 ConcurrentGCThread "G1 Conc#0" [stack: 0x00000000241d0000,0x00000000242d0000] [id=5888]
+
+[error occurred during error reporting (printing all threads), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x00007ffef2298337]
+
+VM state:not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread:  ([mutex/lock_event])
+[0x0000000002b0dcf0] Heap_lock - owner thread: 0x0000000002b12000
+
+Heap address: 0x0000000701400000, size: 4076 MB, Compressed Oops mode: Non-zero based: 0x0000000701400000
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0
+
+GC Heap History (0 events):
+No events
+
+Deoptimization events (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+Events (1 events):
+Event: 0.004 Loaded shared library D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\zip.dll
+
+
+Dynamic libraries:
+0x00007ff74c580000 - 0x00007ff74c58d000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java.exe
+0x00007fff63230000 - 0x00007fff63428000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007fff61c60000 - 0x00007fff61d1f000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007fff60d00000 - 0x00007fff60ff6000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007fff60b70000 - 0x00007fff60c70000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007fff3b3d0000 - 0x00007fff3b3e7000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\jli.dll
+0x00007fff3a900000 - 0x00007fff3a915000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\VCRUNTIME140.dll
+0x00007fff62de0000 - 0x00007fff62f7d000 	C:\WINDOWS\System32\USER32.dll
+0x00007fff471b0000 - 0x00007fff4744a000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e\COMCTL32.dll
+0x00007fff61260000 - 0x00007fff61282000 	C:\WINDOWS\System32\win32u.dll
+0x00007fff61360000 - 0x00007fff613fe000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007fff61720000 - 0x00007fff6174c000 	C:\WINDOWS\System32\GDI32.dll
+0x00007fff61110000 - 0x00007fff61225000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007fff61000000 - 0x00007fff6109d000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007fff62db0000 - 0x00007fff62de0000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007fff304c0000 - 0x00007fff3055b000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\msvcp140.dll
+0x00007ffef1fb0000 - 0x00007ffef2af3000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\server\jvm.dll
+0x00007fff62b70000 - 0x00007fff62c1f000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007fff61bc0000 - 0x00007fff61c5c000 	C:\WINDOWS\System32\sechost.dll
+0x00007fff62c20000 - 0x00007fff62d46000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007fff61290000 - 0x00007fff61298000 	C:\WINDOWS\System32\PSAPI.DLL
+0x00007fff51700000 - 0x00007fff51709000 	C:\WINDOWS\SYSTEM32\WSOCK32.dll
+0x00007fff581f0000 - 0x00007fff58217000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007fff61ee0000 - 0x00007fff61f4b000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007fff58220000 - 0x00007fff5822a000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007fff5e7d0000 - 0x00007fff5e7e2000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007fff4e7b0000 - 0x00007fff4e7c0000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\verify.dll
+0x00007fff5aa80000 - 0x00007fff5ac64000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007fff4c720000 - 0x00007fff4c754000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007fff60c70000 - 0x00007fff60cf2000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007fff3a740000 - 0x00007fff3a768000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\java.dll
+0x00007fff4e780000 - 0x00007fff4e78a000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\jimage.dll
+0x00007fff3a8e0000 - 0x00007fff3a8f7000 	D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\zip.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.19041.1110_none_60b5254171f9507e;D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin\server
+
+VM Arguments:
+jvm_args: -Dmaven.multiModuleProjectDirectory=d:\javaWorkSpace\Multiple_WebRTC_Demo\webrtcdemo 
+java_command: org.apache.maven.wrapper.MavenWrapperMain -B -N -DgraphFormat=text -DshowDuplicates -DshowConflicts -DshowVersions -DshowGroupIds -DoutputDirectory=c:\Users\Administrator\AppData\Roaming\Code\User\workspaceStorage\4b0c9829e5be415d1a53d71576b5d93b\vscjava.vscode-maven -DoutputFileName=10725ad476dd24da223726cd00963e24.deps.txt com.github.ferstl:depgraph-maven-plugin:4.0.2:graph -f d:\javaWorkSpace\Multiple_WebRTC_Demo\webrtcdemo\pom.xml
+java_class_path (initial): d:\javaWorkSpace\Multiple_WebRTC_Demo\webrtcdemo\.mvn\wrapper\maven-wrapper.jar
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 3                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 10                                        {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 268435456                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 4273995776                                {product} {ergonomic}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5836300                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122910970                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122910970                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool UseCompressedClassPointers               = true                                 {lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                                 {lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot
+CLASSPATH=D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\lib;D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\lib\tools.jar;D:\apache-tomcat-8.5.71\lib\servlet-api.jar;D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\mysql-connector-java-8.0.27\mysql-connector-java-8.0.27.jar;
+PATH=C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Intel\Shared Libraries\redist\intel64_win\compiler;D:\Program Files\AdoptOpenJDK\jdk-11.0.10.9-hotspot\bin;C:\Python310\Scripts\;C:\Python310\;D:\Program Files\VanDyke Software\Clients\;G:\VMware\VMware Workstation\bin\;F:\Python310\Scripts\;F:\Python310\;D:\Anaconda3;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;F:\Python38-32\;F:\Python38-32\Scripts;C:\Program Files\MySQL\MySQL Server 8.0\bin;D:\Program Files\Git\cmd;D:\Nodejs\;C:\ProgramData\chocolatey\bin;D:\Program Files\Bandizip\;G:\MATLAB7\bin\win32;C:\Program Files\Pandoc\;C:\Program Files\dotnet\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Administrator\.windows-build-tools\python27\;D:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\C\Tools\WinNT;C:\C\MSDev98\Bin;C:\C\Tools;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools\WinNT;C:\Program Files (x86)\Microsoft Visual Studio\Common\MSDev98\Bin;C:\Program Files (x86)\Microsoft Visual Studio\Common\Tools;C:\Program Files (x86)\Microsoft Visual Studio\VC98\bin;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;D:\Program Files\Microsoft VS Code\bin;D:\Program Files\MongoDB\Server\4.4\bin;D:\mingw64\bin;C:\Windows\system32;D:\apache-maven-3.8.2\bin;D:\apache-tomcat-8.5.71\bin;C:\Users\Administrator\AppData\Roaming\npm;C:\Users\Administrator\.dotnet\tools;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;
+USERNAME=Administrator
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=AMD64 Family 23 Model 8 Stepping 2, AuthenticAMD
+
+
+
+---------------  S Y S T E M  ---------------
+
+OS: Windows 10 , 64 bit Build 19041 (10.0.19041.3155)
+OS uptime: 1 days 1:51 hours
+
+CPU:total 12 (initial active 12) (12 cores per cpu, 2 threads per core) family 23 model 8 stepping 2 microcode 0x0, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, mmxext, 3dnowpref, lzcnt, sse4a, ht, tsc, tscinvbit, tscinv, bmi1, bmi2, adx, s
+
+Memory: 4k page, system-wide physical 16296M (2778M free)
+TotalPageFile size 21416M (AvailPageFile size 215M)
+current process WorkingSet (physical memory assigned to process): 10M, peak: 10M
+current process commit charge ("private bytes"): 64M, peak: 320M
+
+vm_info: OpenJDK 64-Bit Server VM (11.0.10+9) for windows-amd64 JRE (11.0.10+9), built on Jan 20 2021 06:07:07 by "" with MS VC++ 15.9 (VS2017)
+
+END.
