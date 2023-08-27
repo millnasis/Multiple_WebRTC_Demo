@@ -7,5 +7,4 @@ public class JoinSignal {
     // private String cmd ;
     // private int roomId;
     private String uid;
-    private String identity;
 }

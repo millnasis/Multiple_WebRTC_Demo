@@ -7,5 +7,4 @@ public class CandidateSignal {
     private String uid;
     private String remoteUid;
     private String msg;
-    private String identity;
 }

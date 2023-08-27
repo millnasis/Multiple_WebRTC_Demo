@@ -21,7 +21,7 @@ class Home extends React.Component {
   componentDidMount() {
 
     this.rtc = new MultiZeroRtc(
-      "/gs-guide",
+      "/socket-join",
       () => {
         this.setState({ renderRemoteUserId: this.rtc.getRemoteUserIdList() });
       },

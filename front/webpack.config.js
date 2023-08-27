@@ -30,7 +30,7 @@ module.exports = {
   entry: entryObject,
   output: {
     filename: "js/[name].js",
-    path: path.resolve(__dirname, "../src/main/resources/static/"),
+    path: path.resolve(__dirname, "../webrtcdemo/src/main/resources/static/"),
     // publicPath:"/public",//打包出来的所有路径前缀
     clean: false,
     //每次输出先清空文件夹
@@ -133,6 +133,6 @@ module.exports = {
     hot: true,
     //每次调试重新编译启用热更新，即每次只重新编译被更改的文件，需要在入口js文件加入判别热更新模块的代码
   },
-  // mode: "development",
-  mode: "production",
+  mode: "development",
+  // mode: "production",
 };

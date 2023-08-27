@@ -3,7 +3,7 @@ import Stomp from "stompjs";
 import constants from "./constant";
 const { signal } = constants;
 
-const respPrefix = "/ws-resp/";
+const respPrefix = "/socket-resp/";
 const sendPrefix = "/signal/";
 
 export default class MultiZeroRtc {
